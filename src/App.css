@@ -1,0 +1,197 @@
+html {
+    background: #ddd;
+    height: 100%;
+    display: flex;
+    }
+body {
+    width: 100%;
+    margin: auto;
+    }
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    }
+    .todo-list {
+    background: #fff;
+    font-size: 15px;
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 8px 16px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+    }
+.button {
+        outline: none;
+        padding: 8px;
+        font-size: 15px;
+        border: 0px solid;
+        border-radius: 5px;
+        color: white;
+        }
+        .button[disabled]{
+        opacity: 0.3;
+        }
+    /** TODO*/
+
+    .file-input{
+    padding: 2px;
+    background: #f8f8f8;
+    }
+    .file-input > .text {
+    outline: none;
+    padding: 0px 10px;
+    font-size: 15px;
+    width: 230px;
+    height: 46px;
+    background:transparent;
+    border: 0px solid;
+    }
+    .todo {
+        display: block;
+        position: relative;
+        padding: 1em 1em 1em 16%;
+        margin: 0 auto;
+        cursor: pointer;
+        border-bottom: solid 1px #ddd;
+        }
+
+    .todo.new-item {
+        opacity: 0;
+        transform: translateX(100px);
+        animation: fadeIn .3s linear forwards;
+        }    
+    .todo__state {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+            }
+    .todo__icon {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: auto;
+                margin: auto;
+            }
+            .button.pink {
+                background: #e95678;
+              }
+              
+              .button.pink:hover {
+                background: #c23455;
+              }
+              
+              .button.pink:active {
+                background: #e95678;
+              }
+              
+              .button.blue {
+                background: #25b0bc;
+              }
+              
+              .button.blue:hover {
+                background: #166b72;
+              }
+              
+              .button.blue:active {
+                background: #25b0bc;
+              }
+              
+              .button {
+                outline: none;
+                padding: 8px;
+                font-size: 15px;
+                border: 0px solid;
+                border-radius: 5px;
+                color: white;
+              }
+              
+              .button[disabled] {
+                opacity: 0.3;
+              }
+              .todo {
+                display: block;
+                position: relative;
+                padding: 1em 1em 1em 16%;
+                margin: 0 auto;
+                cursor: pointer;
+                border-bottom: solid 1px #ddd;
+              }
+              
+              .todo.new-item {
+                opacity: 0;
+                transform: translateX(100px);
+                animation: fadeIn 0.3s linear forwards;
+              }
+              
+              .todo:last-child {
+                border-bottom: none;
+              }
+
+              .todo__state {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+              }
+              
+              .todo__text {
+                color: #076b74;
+                text-align: left;
+                transition: all 0.4s/2 linear 0.4s/2;
+              }
+              
+              .todo__icon {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: auto;
+                margin: auto;
+                fill: none;
+                stroke: #42d7e4;
+                stroke-width: 2;
+                stroke-linejoin: round;
+                stroke-linecap: round;
+              }
+              
+              .todo__line,
+              .todo__box,
+              .todo__check {
+                transition: stroke-dashoffset 0.4s cubic-bezier(0.9, 0, 0.5, 1);
+              }
+              
+              .todo__circle {
+                stroke: #42d7e4;
+                stroke-dasharray: 1 6;
+                stroke-width: 0;
+                transform-origin: 13.5px 12.5px;
+                transform: scale(0.4) rotate(0deg);
+                animation: none 0.4s linear;
+              }
+              
+              @keyframes explode {
+                30% {
+                  stroke-width: 3;
+                  stroke-opacity: 1;
+                  transform: scale(0.8) rotate(40deg);
+                }
+                100% {
+                  stroke-width: 0;
+                  stroke-opacity: 0;
+                  transform: scale(1.1) rotate(60deg);
+                }
+              }
+              
+              .todo__box {
+                stroke-dasharray: 56.1053, 56.1053;
+                stroke-dashoffset: 0;
+                transition-delay: 0.4s * 0.2;
+              }
+              
+
+              
+  
